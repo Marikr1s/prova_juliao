@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- remix icon cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Sr. Café</title>
+</head>
+
+<body>
+
+    <!-- seção de cabeçalho começa  -->
+
+    <header class="header">
+
+        <a href="index.html" class="logo"> <i class="ri-store-2-line"></i> Sr Café </a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">sobre</a>
+            <a href="#popular">popular</a>
+            <a href="#menu">menu</a>
+            <a href="#order">ordem</a>
+            <a href="#blogs">blogs</a>
+        </nav>
+
+        <div class="icons">
+            <div id="menu-btn" class="ri-menu-line"></div>
+            <div id="search-btn" class="ri-search-line"></div>
+            <div id="cart-btn" class="ri-shopping-cart-line"></div>
+            <div id="login-btn" class="ri-user-line"></div>
+        </div>
+
+    </header>
+
+    <!-- seção de cabeçalho termina  -->
+
+
+    <!-- início do formulário de pesquisa -->
+
+    <section class="search-form-container">
+
+        <form action="">
+            <input type="search" placeholder="procure aqui..." id="search-box">
+            <label for="search-box" class="ri-search-line"></label>
+        </form>
+
+    </section>
+
+    <!-- fim do formulário de pesquisa -->
+
+
+    <!-- início da seção do carrinho de compras -->
+
+    <section class="shopping-cart-container">
+
+        <div class="products-container">
+
+            <h3 class="title">seus produtos</h3>
+
+            <div class="box-container">
+
+                <div class="box">
+                    <i class="ri-close-line close-icon"></i>
+                    <img src="img/cardapio-1.jpg" alt="">
+                    <div class="content">
+                        <h3>cupcake-aniversário</h3>
+                        <span> quantidade : </span>
+                        <input type="number" name="" min="1" value="1" id="">
+                        <br>
+                        <span> preço : </span>
+                        <span class="price"> R$5.50 </span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <i class="ri-close-line close-icon"></i>
+                    <img src="img/menu-2.png" alt="">
+                    <div class="content">
+                        <h3>pizza portuguesa</h3>
+                        <span> quantidade : </span>
+                        <input type="number" name="" min="1" value="1" id="">
+                        <br>
+                        <span> preço : </span>
+                        <span class="price"> R$40.00 </span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <i class="ri-close-line close-icon"></i>
+                    <img src="img/menu-3.png" alt="">
+                    <div class="content">
+                        <h3>sanduiche natural</h3>
+                        <span> quantidade : </span>
+                        <input type="number" name="" min="1" value="1" id="">
+                        <br>
+                        <span> preço : </span>
+                        <span class="price"> R$10.00 </span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <i class="ri-close-line close-icon"></i>
+                    <img src="img/cardapio-2.jpg" alt="">
+                    <div class="content">
+                        <h3>bolo red velvet</h3>
+                        <span> quantidade: </span>
+                        <input type="number" name="" min="1" value="1" id="">
+                        <br>
+                        <span> preço : </span>
+                        <span class="price"> R$20.00 </span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <i class="ri-close-line close-icon"></i>
+                    <img src="img/cardapio-3.png" alt="">
+                    <div class="content">
+                        <h3>brownie recheado</h3>
+                        <span> quantidade : </span>
+                        <input type="number" name="" min="1" value="1" id="">
+                        <br>
+                        <span> preço : </span>
+                        <span class="price"> R$15.00 </span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="cart-total">
+
+            <h3 class="title"> valor total </h3>
+
+            <div class="box">
+                <h3 class="subtitle">subtitle: <span>R$90.50</span> </h3>
+                <h3 class="total"> total : <span>R$90.50</span> </h3>
+
+                <a href="#" class="btn">fazer o check-out</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- final da seção do carrinho de compras -->
+
+
+    <!-- início do formulário de login -->
+
+    <div class="login-form-container">
+
+        <form action="">
+            <h3>forma de login</h3>
+            <input type="email" placeholder="Digite seu e-mail" class="box">
+            <input type="password" placeholder="coloque sua senha" class="box">
+            <div class="remember">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">me lembre</label>
+            </div>
+            <input type="submit" value="login now" class="btn">
+            <p>Esqueceu a senha? <a href="#">Clique aqui</a> </p>
+            <p>Não possui uma conta? <a href="#">crie uma</a> </p>
+        </form>
+
+    </div>
+
+    <!-- Fim do formulário de login -->
+
+
+    <!-- seção inicial começa  -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <span>Bem vindo ao Sr. Café</span>
+            <h3>Onde sabores frescos florescem e se unem.</h3>
+            <p>Experimente a culinária fresca da fazenda à mesa em nosso café inspirado no jardim. Venha para a comida,
+                fique para a
+                atmosfera.</p>
+            <a href="#popular" class="btn">peça agora</a>
+        </div>
+
+        <div class="image">
+            <img src="img/cafe.png" alt="" class="home-img">
+            <img src="img/grãos.png" alt="" class="home-parallax-img">
+        </div>
+
+    </section>
+
+    <!-- seção inicial termina  -->
+
+
+    <!-- seção de categoria começa  -->
+
+    <section class="category">
+        <a href="#" class="box">
+            <img src="img/pizza.png" alt="">
+            <h3>Pizza</h3>
+        </a>
+
+        <a href="#" class="box">
+            <img src="img/sanduiche.png" alt="">
+            <h3>sanduiche</h3>
+        </a>
+
+        <a href="#" class="box">
+            <img src="img/bolo.png" alt="">
+            <h3>bolo</h3>
+        </a>
+
+        <a href="#" class="box">
+            <img src="img/cappuccino.png" alt="">
+            <h3>café</h3>
+        </a>
+
+        <a href="#" class="box">
+            <img src="img/donuts.png" alt="">
+            <h3>donuts</h3>
+        </a>
+
+        <a href="#" class="box">
+            <img src="img/croissant.png" alt="">
+            <h3>croissant</h3>
+        </a>
+    </section>
+
+    <!-- seção de categoria termina -->
+
+
+    <!-- sobre o início da seção  -->
+
+    <section class="about" id="about">
+
+        <div class="image">
+            <img src="img/img-2.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <span>porque nos escolher?</span>
+            <h3 class="title">o que torna a nossa coida deliciosa!</h3>
+            <p>Uma comida deliciosa, um ambiente aconchegante, atendentes simpáticos e uma linda vista para a natureza. Nos escolha para Uma
+                experiencia gatronômica inesquecível
+            </p>
+            <a href="#" class="btn">leia mais</a>
+            <div class="icons-container">
+                <div class="icons">
+                    <img src="img/serv-1.png" alt="" width="40">
+                    <h3>entrega rápida</h3>
+                </div>
+                <div class="icons">
+                    <img src="img/serv-2.png" alt="" width="40">
+                    <h3>comida fresca</h3>
+                </div>
+                <div class="icons">
+                    <img src="img/serv-3.png" alt="" width="40">
+                    <h3>a melhor qualidade</h3>
+                </div>
+                <div class="icons">
+                    <img src="img/serv-4.png" alt="" width="40">
+                    <h3>support 24/7</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- sobre o fim da seção -->
+
+
+    <!-- seção popular começa  -->
+
+    <section class="popular" id="popular">
+
+        <div class="heading">
+            <span>comidas populares</span>
+            <h3>nossos produtos especiais</h3>
+        </div>
+
+        <div class="box-container">
+
+            <div class="box">
+                <a href="#" class="ri-heart-line wishlist-icon"></a>
+                <div class="image">
+                    <img src="img/cafe-vender.webp" alt="">
+                </div>
+                <div class="content">
+                    <h3>café importado</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> (50) </span>
+                    </div>
+                    <div class="price">R$70.00 <span>R$90.00</span> </div>
+                    <a href="#" class="btn">adicionar ao carrinho</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="#" class="ri-heart-line wishlist-icon"></a>
+                <div class="image">
+                    <img src="img/donuts-vender.jpg" width="220px" alt="">
+                </div>
+                <div class="content">
+                    <h3>donuts-aniversário</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> (50) </span>
+                    </div>
+                    <div class="price">R$30.00 <span>R$40.00</span> </div>
+                    <a href="#" class="btn">adicionar ao carrinho</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="#" class="ri-heart-line wishlist-icon"></a>
+                <div class="image">
+                    <img src="img/cafe-vender.2.webp" alt="">
+                </div>
+                <div class="content">
+                    <h3>café starbucks</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> (50) </span>
+                    </div>
+                    <div class="price">R$50.00 <span>R$70.00</span> </div>
+                    <a href="#" class="btn">adicionar ao carrinho</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="#" class="ri-heart-line wishlist-icon"></a>
+                <div class="image">
+                    <img src="img/cupcake.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>cupcake red velvet</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> (50) </span>
+                    </div>
+                    <div class="price">R$5.50 <span>R$9.00</span> </div>
+                    <a href="#" class="btn">adicionar ao carrinho</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="#" class="ri-heart-line wishlist-icon"></a>
+                <div class="image">
+                    <img src="img/cafe-colombia.webp" width="220px" alt="">
+                </div>
+                <div class="content">
+                    <h3>café starbucks-Colombia</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> (50) </span>
+                    </div>
+                    <div class="price">R$60.00 <span>R$80.00</span> </div>
+                    <a href="#" class="btn">adicionar ao carrinho</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="#" class="ri-heart-line wishlist-icon"></a>
+                <div class="image">
+                    <img src="img/Sanduíche-vender.webp" width="220px" alt="">
+                </div>
+                <div class="content">
+                    <h3>sanduíche natural</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> (50) </span>
+                    </div>
+                    <div class="price">R$20.00 <span>R$25.00</span> </div>
+                    <a href="#" class="btn">adicionar ao carrinho</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="#" class="ri-heart-line wishlist-icon"></a>
+                <div class="image">
+                    <img src="img/cafe-vender.3.webp" width="220px" alt="">
+                </div>
+                <div class="content">
+                    <h3>café classique</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> (50) </span>
+                    </div>
+                    <div class="price">R$65.00 <span>R$95.00</span> </div>
+                    <a href="#" class="btn">adicionar ao carrinho</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="#" class="ri-heart-line wishlist-icon"></a>
+                <div class="image">
+                    <img src="img/pizza-vender.jpg" height="50px" width="150px" alt="">
+                </div>
+                <div class="content">
+                    <h3>pizza de pepperoni</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> (50) </span>
+                    </div>
+                    <div class="price">R$40.00 <span>R$50.00</span> </div>
+                    <a href="#" class="btn">adicionar ao carrinho</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- seção popular termina -->
+
+
+    <!-- seção de banner começa  -->
+
+    <section class="banner">
+           
+        </div>
+
+        <div class="grid-banner">
+            <div class="grid">
+                <img src="img/oferta-1.jpg" alt="">
+                <div class="content">
+                    <span>oferta especial</span>
+                    <h3>até 50% de desconto</h3>
+                    <a href="#" class="btn">peça agora</a>
+                </div>
+            </div>
+
+            <div class="grid">
+                <img src="img/oferta-2.1.jpg" alt="">
+                <div class="content center">
+                    <span>oferta especial</span>
+                    <h3>até 25% de desconto</h3>
+                    <a href="#" class="btn">peça agora</a>
+                </div>
+            </div>
+
+            <div class="grid">
+                <img src="img/ofertas-3.1.jpg" alt="">
+                <div class="content">
+                    <span>oferta limitada</span>
+                    <h3>100% de reembolso</h3>
+                    <a href="#" class="btn">peça agora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- seção de banner termina -->
+
+
+    <!-- seção de menu começa  -->
+
+    <section class="menu" id="menu">
+
+        <div class="heading">
+            <span>nosso cardápio</span>
+            <h3>nossos melhores produtos</h3>
+        </div>
+
+        <div class="box-container">
+
+            <a href="#" class="box">
+                <img src="img/cardapio-1.jpg" alt="">
+                <div class="content">
+                    <h3>cupcake-aniversário</h3>
+                    <div class="price">R$5.50</div>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="img/cardapio-2.jpg" alt="">
+                <div class="content">
+                    <h3>bolo red velvet</h3>
+                    <div class="price">R$20.00</div>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="img/menu-3.png" alt="">
+                <div class="content">
+                    <h3>sanduiche natural</h3>
+                    <div class="price">R$10.00</div>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="img/menu-4.png" alt="">
+                <div class="content">
+                    <h3>sanduiche</h3>
+                    <div class="price">R$15.00</div>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="img/cardapio-3.png" alt="">
+                <div class="content">
+                    <h3>brownie recheado</h3>
+                    <div class="price">R$15.00</div>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="img/cardapio-4.jpg" alt="">
+                <div class="content">
+                    <h3>cappuccino cremoso</h3>
+                    <div class="price">R$20.00</div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- seção de menu termina -->
+
+
+    <!-- seção de pedidos começa  -->
+
+    <section class="order" id="order">
+
+        <div class="heading">
+            <span>peça agora</span>
+            <h3>entrega em casa mais rápida</h3>
+        </div>
+
+        <div class="icons-container">
+            <div class="icons">
+                <img src="img/icon-1.png" alt="">
+                <h3>7:00am á 10:00 pm</h3>
+            </div>
+
+            <div class="icons">
+                <img src="img/icon-2.png" alt="">
+                <h3>+85 98458-0395</h3>
+            </div>
+
+            <div class="icons">
+                <img src="img/icon-3.png" alt="">
+                <h3>Rua Marechal Deodoro, Redenção,Ceara</h3>
+            </div>
+        </div>
+
+        <form action="">
+
+            <div class="flex">
+                <div class="inputBox">
+                    <span>seu nome</span>
+                    <input type="text" name="" id="" placeholder="Nome do cliente">
+                </div>
+                <div class="inputBox">
+                    <span>seu número</span>
+                    <input type="number" name="" id="" placeholder="número do cliente">
+                </div>
+            </div>
+
+            <div class="flex">
+                <div class="inputBox">
+                    <span>seu pedido</span>
+                    <input type="text" name="" id="" placeholder="comida que você quer">
+                </div>
+                <div class="inputBox">
+                    <span>how much</span>
+                    <input type="number" name="" id="" placeholder="número de encomendas">
+                </div>
+            </div>
+
+            <div class="flex">
+                <div class="inputBox">
+                    <span>seus detalhes</span>
+                    <input type="text" name="" id="" placeholder="sua mensagem">
+                </div>
+                <div class="inputBox">
+                    <span>pegar tempo</span>
+                    <input type="datetime-local" name="" id="">
+                </div>
+            </div>
+
+            <div class="flex">
+                <div class="inputBox">
+                    <textarea placeholder="seu endereço" name="" id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+
+            <input type="submit" value="proceder ao pedido" class="btn">
+
+        </form>
+    </section>
+
+    <!-- seção de pedidos termina -->
+
+
+    <!-- seção de blogs começa  -->
+
+    <section class="blogs" id="blogs">
+
+        <div class="heading">
+            <span>nossos blogs</span>
+            <h3>nossas histórias diárias</h3>
+        </div>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <h3> <i class="fas fa-calendar"></i> 30 de maio de 2023 </h3>
+                    <img src="img/blog-1.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <div class="tags">
+                        <a href="#"> <i class="fas fa-tag"></i> comida / </a>
+                        <a href="#"> <i class="fas fa-tag"></i> café / </a>
+                        <a href="#"> <i class="fas fa-tag"></i> pizza / </a>
+                    </div>
+
+                    <h3>receitas</h3>
+                    <p>receitas dos nossos melhores produtos.</p>
+                    <a href="#" class="btn">consulte Mais informação</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <h3> <i class="fas fa-calendar"></i> 30 de maio de 2023 </h3>
+                    <img src="img/blog1.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="tags">
+                        <a href="#"> <i class="fas fa-tag"></i> comida / </a>
+                        <a href="#"> <i class="fas fa-tag"></i> café / </a>
+                        <a href="#"> <i class="fas fa-tag"></i> pizza </a>
+                    </div>
+
+                    <h3>chefs</h3>
+                    <p>os chefs tem uma conversa sobre os produtos</p>
+                    <a href="#" class="btn">consulte mais informação</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <h3> <i class="fas fa-calendar"></i> 30 de maio de 2023 </h3>
+                    <img src="img/blog2.webp" alt="">
+                </div>
+                <div class="content">
+                    <div class="tags">
+                        <a href="#"> <i class="fas fa-tag"></i> comida / </a>
+                        <a href="#"> <i class="fas fa-tag"></i> café / </a>
+                        <a href="#"> <i class="fas fa-tag"></i> pizza </a>
+                    </div>
+
+                    <h3>blogs</h3>
+                    <p>tudo sobre nossa loja.</p>
+                    <a href="#" class="btn">consulte mais informação</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- seção de blogs termina -->
+
+
+    <!-- seção de rodapé começa  -->
+
+    <section class="footer">
+
+        <div class="newsletter">
+            <h3>Boletim de Notícias</h3>
+            <form action="">
+                <input type="email" name="" id="" placeholder="Digite seu e-mail">
+                <input type="submit" value="subscribe">
+            </form>
+        </div>
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>nosso cardápio</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> pizza </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> bolo </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> croissant </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> café </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> e mais.. </a>
+            </div>
+
+            <div class="box">
+                <h3>Links Rápidos</h3>
+                <a href="#home"> <i class="fas fa-arrow-right"></i> home </a>
+                <a href="#about"> <i class="fas fa-arrow-right"></i> sobre </a>
+                <a href="#popular"> <i class="fas fa-arrow-right"></i> popular </a>
+                <a href="#menu"> <i class="fas fa-arrow-right"></i> menu </a>
+                <a href="#order"> <i class="fas fa-arrow-right"></i> ordem </a>
+                <a href="#blogs"> <i class="fas fa-arrow-right"></i> blogs </a>
+            </div>
+
+            <div class="box">
+                <h3>links extras</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> meu pedido </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> minha conta </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> meu favorito </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> termos de uso </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> política de Privacidade </a>
+            </div>
+
+            <div class="box">
+                <h3>horário de funcionamento</h3>
+                <p>segunda-feira: 7h às 22h</p>
+                <p>terça-feira: 7h às 22h</p>
+                <p>quarta-feira: 7h às 22h</p>
+                <p>sexta-feira: 7h às 22h</p>
+                <p>sábado e domingo fechado</p>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="#" class="fab fa-pinterest"></a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- seção de rodapé termina -->
+
+
+
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
